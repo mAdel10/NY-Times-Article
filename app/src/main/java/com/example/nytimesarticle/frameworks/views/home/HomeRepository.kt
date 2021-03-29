@@ -3,7 +3,6 @@ package com.example.nytimesarticle.frameworks.views.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.nytimesarticle.business.models.ArticleList
-import com.example.nytimesarticle.business.models.Articles
 import com.example.nytimesarticle.business.requests.ApiClient
 import com.example.nytimesarticle.business.requests.ApiService
 import retrofit2.Call
@@ -11,6 +10,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class HomeRepository (val api : ApiService = ApiClient.apiService) {
+
 
     private val _articles = MutableLiveData<ArticleList>()
     val articles : LiveData<ArticleList> get() = _articles
@@ -29,5 +29,4 @@ class HomeRepository (val api : ApiService = ApiClient.apiService) {
             }
         })
     }
-
 }
