@@ -12,4 +12,7 @@ interface ApiService {
 
     @GET(Constants.HOME)
     fun doGetArticles() : Call<ArticleList>
+
+    @GET(Constants.HOME)
+    suspend fun doGetArticle() : Response<ArticleList>
 }

@@ -11,7 +11,7 @@ class HomeViewModel : ViewModel() {
     }
 
     private fun getArticles() {
-        repository.getArticles()
+        repository.getArticle()
     }
 
     fun getArticleResponse() = repository.articles
