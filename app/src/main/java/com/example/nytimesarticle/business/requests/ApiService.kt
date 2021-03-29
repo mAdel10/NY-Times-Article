@@ -11,6 +11,4 @@ interface ApiService {
     @GET(Constants.HOME)
     fun doGetArticles() : Call<ArticleList>
 
-    @GET(Constants.HOME)
-    fun doGetArticleProfile() : Call<ArticleList>
 }

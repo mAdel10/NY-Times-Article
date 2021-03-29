@@ -21,13 +21,6 @@ class ArticleFragment : BaseFragment<FragmentArticleBinding>() {
 
 
     private fun getArticleDetails() {
-//        binding.title.text = article.title
-//        binding.section.text = article.section
-//        binding.type.text = article.type
-//        binding.Description.text = article.keywords
-//        binding.publishedDate.text = article.published_date
-//        binding.updateDate.text = article.updated
-//        binding.articleLink.text = article.articleLink
 
         val title = arguments?.getString("title")
         val auth = arguments?.getString("auth")

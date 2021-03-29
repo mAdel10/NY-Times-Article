@@ -28,8 +28,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), HomeAdapter.OnArticleC
 
     private fun subscribeOnObservers() {
         homeViewModel.getArticleResponse().observe(this, {
-            Toast.makeText(requireContext(), it.articleList.size.toString(), Toast.LENGTH_LONG)
-                .show()
+
             adapter.setArticles(it.articleList)
         })
     }
@@ -57,8 +56,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), HomeAdapter.OnArticleC
         bundle.putString("articleLink", article.articleLink)
 
         findNavController().navigate(R.id.toArticleFragment,bundle)
-            Toast.makeText(context, "${article.title.toString()}", Toast.LENGTH_LONG)
-                .show()
 
     }
 

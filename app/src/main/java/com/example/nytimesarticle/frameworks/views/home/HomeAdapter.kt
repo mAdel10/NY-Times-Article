@@ -17,9 +17,6 @@ class HomeAdapter(private var articles: List<Articles>, val onImageClickListener
         return ViewHolder(itemArticleBinding)
     }
 
-//    override fun onBindViewHolder(holder: HomeHolder, position: Int) {
-//        holder.bind(articles[position])
-//    }
 
     override fun getItemCount(): Int {
         return articles.size
